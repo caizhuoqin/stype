@@ -1,0 +1,929 @@
+/*css reset*/
+*{margin:0px;padding:0px;}
+ul,li,ol{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+a,u{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+#top,#nav#banner{width:1000px;margin:0 auto;}
+body{
+	width: 100%;
+}
+
+.huweiCenter{
+	width: 100%;
+	min-height: 3000px;
+	background: #CCC;
+}
+.xtb{
+	width:1210PX;
+	height: 90px;
+	margin: 0 auto;
+	background: #fff;
+	padding-top: 10px;
+}
+
+/*设置头部左边的信息,登录和注册*/
+.xtb_left{
+	float:left;
+	width:300px;
+	height: 80px;
+	border-right: 1px solid #333333;
+}
+/*设置头像的盒子*/
+.xtb_left .headPortrait{
+	float: left;
+	width: 100px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+}
+/*设置头像字体的大小*/
+.xtb_left .headPortrait .icon-touxiang{
+	font-size: 60px;
+	color: #ccc;
+}
+/*设置可以跳转去登录和注册界面的信息*/
+.xtb_login{
+	float: left;
+	width: 165px;
+	height: 75px;
+	padding-top: 5px;
+}
+.xtb_login h2{
+	font-size: 12px;
+	color: #888888;
+}
+.xtb_login h2 a{
+	color: #000000;
+}
+.xtb_login h3{
+	display: block;
+	width: 100%;
+	height: 25px;
+	/*margin-top: 20px;*/
+	padding-top: 10px;
+}
+/*给h3标签里面的button设置样式*/
+.xtb_login h3 button{
+	width: 70px;
+	height: 20px;
+	border: none;
+	border:1px solid red;
+	background: #fff;
+	color: red;
+}
+.xtb_login h3 button:hover{
+	background: red;
+	color: #fff;
+}
+
+.xtb_center{
+	float: left;
+	width: 600px;
+	height: 80px;
+	/*background: yellow;*/
+	border-right:1px solid #312E3D;
+}
+
+.xtb_center li{
+	float: left;
+	display: block;
+	width: 73px;
+	height: 70px;
+	margin-left: 20px;
+	/*margin-right: 30px;*/
+	font-size: 12px;
+	/*background: #ccc;*/
+	margin-top: 10px;
+	text-align: center;
+}
+/*给icon图标字体设置大小*/
+.xtb_center .iconfont{
+	font-size: 30px;
+}
+.xtb_center .icon-qiye,.icon-quan,.icon-shuma{
+	color: blue;
+}
+.xtb_center .icon-diaohuan{
+	color: orange;
+}
+.xtb_center .icon-peijian{
+	color: palevioletred;
+}
+
+/*给li中的h3标签设置样式*/
+.xtb_center li h3{
+	display: block;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 30px;
+	
+}
+.xtb_center li h3 a{
+	color: #000000;
+}
+.xtb_center li h3 a:hover{
+	color: red;
+}
+/*设置头部右边内容*/
+.xtb_right{
+	float: left;
+	width: 300px;
+	height: 80px;
+}
+/*设置头部最右边顶部的内容*/
+.xtb_right .top{
+	width: 100%;
+	height: 40px;
+	border-bottom:1px solid #ccc;
+}
+.xtb_right .top .notice{
+	float: left;
+	width: 60px;
+	height: 40px;
+}
+.xtb_right .top .notice h3{
+	text-align: center;
+	line-height: 40px;
+}
+.xtb_right .top .swiper{
+	float: left;
+	width: 240px;
+	height: 40px;
+	background: pink;
+}
+/*设置最右边下面的内容*/
+.xtb_right .buttom{
+	width: 100%;
+	height: 39px;
+}
+.xtb_right .buttom li{
+	display: block;
+	width: 82px;
+	height: 39px;
+	text-align: center;
+	line-height: 39px;
+	float: left;
+	margin-right: 10px;
+}
+.xtb_right .buttom .iconfont{
+	font-size: 16px;
+}
+.xtb_right .buttom .icon-ma{
+	color: orange;
+}
+.xtb_right .buttom .icon-shiming{
+	color: pink;
+}
+.xtb_right .buttom .icon-baozhang{
+	color: blue;
+}
+.xtb_right .buttom  a{
+	font-size: 14px;
+	color: #000000;
+}
+.xtb_right .buttom  a:hover{
+	color: red;
+}
+
+
+/*设置第二部分的图标内容*/
+.huweiCenter .center_img{
+	width: 1210px;
+	height: 180px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.huweiCenter .center_img div{
+	width: 291px;
+	height: 160px;
+	float: left;
+	margin-right: 11px;
+}
+.huweiCenter .center_img div:hover{
+	box-shadow: 0px 3px 30px #333333;
+}
+/*热销单品*/
+.huweiCenter .center_hot{
+	width: 1210px;
+	height: 40px;
+	margin: 0 auto;
+}
+.huweiCenter .center_hot h3{
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*手机图片集合*/
+.huweiCenter .iphone_gather{
+	width: 1210px;
+	height: 600px;
+	margin: 0 auto;
+}
+/*左边图片*/
+.iphone_gather .gather_left{
+	float: left;
+	width: 232px;
+	height: 590px;
+	margin-top: 5px;
+	background-image: url(../images/gather/gather1.jpg);
+}
+.iphone_gather .gather_left:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+/*设置右边图标的框*/
+.iphone_gather .gather_right{
+	float: left;
+	margin-left: 15px;
+	width: 950px;
+	height: 590px;
+	
+}
+.iphone_gather .gather_right div{
+	float: left;
+	margin: 5px 10px;
+	width: 215px;
+	height: 287px;
+	background: #fff;
+}
+.iphone_gather .gather_right img{
+	width: 140px;
+	height: 160px;
+	margin-left: 35px;
+	margin-top: 20px;
+}
+.iphone_gather .gather_right h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.iphone_gather .gather_right h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.iphone_gather .gather_right h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.iphone_gather .gather_right div:hover{
+	box-shadow: 1px 3px 10px #333333;
+}
+
+.huweiCenter .boutique{
+	width: 1210px;
+	height: 60px;
+	margin: 0 auto;
+}
+.huweiCenter .boutique h2{
+	height: 40px;
+	line-height: 60px;
+	font-weight: bold;
+	font-size: 18px;
+	}
+/*设置精美电子产品*/
+.huweiCenter .boutique_products{
+	position: relative;
+	width: 1210px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*设置全部图片的宽度*/
+.huweiCenter .boutique_products .products_gather{
+	position: absolute;
+	width: 5000px;
+	height: 300px;
+}
+/*给每一个图片设置一个div*/
+.huweiCenter .boutique_products .products_gather div{
+	float: left;
+	width: 210px;
+	height: 290px;
+	margin-right:2px;
+	background: #fff;
+}
+/*设置每一个图片的大小*/
+.huweiCenter .boutique_products .products_gather img{
+	width: 140px;
+	height: 140px;
+	margin-top: 20px;
+	margin-left: 30px;
+	
+}
+.huweiCenter .boutique_products .products_gather h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .boutique_products .products_gather h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .boutique_products .products_gather h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .boutique_products .products_gather div:hover{
+	box-shadow: 0px 1px 10px #333333;
+}
+/*设置向左的小图标*/
+.huweiCenter .boutique_products .boutique_left{
+	position: absolute;
+	width: 20px;
+	height: 50px;
+	top: 100px;
+	left: 0px;
+	background: #312E3D;
+	opacity: 0.3;
+	line-height: 50px;
+	z-index: 1;
+}
+/*设置向右的小图标*/
+.huweiCenter .boutique_products .boutique_right{
+	position: absolute;
+	width: 20px;
+	height: 50px;
+	top: 100px;
+	right: 0px;
+	background: #312E3D;
+	opacity: 0.3;
+	line-height: 50px;
+	z-index: 1;
+}
+.huweiCenter .boutique_products .iconfont{
+	font-size: 20px;
+	color: #FFFDEF;
+}
+/*鼠标滑过,小图标的透明度变为一*/
+.huweiCenter .boutique_products .boutique_left:hover{
+	opacity: 1;
+}
+.huweiCenter .boutique_products .boutique_right:hover{
+	opacity: 1;
+}
+
+/*设置中间部分的轮播图*/
+.huweiCenter .gather_swiper{
+	width: 1210px;
+	height: 120px;
+	background-image: url(../images/gather/gather_swiper.jpg);
+	margin: 0 auto;
+}
+.huweiCenter .gather_iph{
+	width: 1210px;
+	height: 70px;
+	margin-top: 10px;
+	margin: 0 auto;
+}
+.huweiCenter .gather_iph h2{
+	display: block;
+	width: 100px;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+	font-size: 20px;
+}
+.huweiCenter .gather_iph ul{
+	float: left;
+	width: 1000px;
+	height: 50px;
+	margin-top: 10px;
+}
+.huweiCenter .gather_iph li{
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+	
+}
+.huweiCenter .gather_iph li a{
+	color: #888888;
+}
+.huweiCenter .gather_iph li:hover a{
+	color: orange;
+}
+.huweiCenter .gather_iph li:hover{
+	border-bottom: 3px solid orange;
+}
+.huweiCenter .gather_iph h3{
+	display: block;
+	width: 100px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.huweiCenter .gather_iph h3 a{
+	color: #888888;
+}
+.huweiCenter .gather_iph h3 a:hover{
+	color: red;
+}
+.huweiCenter .gather_img12z{
+	width: 1210px;
+	height: 1075px;
+	margin: 0 auto;
+}
+
+
+.huweiCenter .gather_img12z div{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 10px;
+}
+.huweiCenter .gather_img12z div:first-child{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../images/gather/gather_img_1.jpg);
+}
+.huweiCenter .gather_img12z div img{
+	width: 150px;
+	height: 200px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+.huweiCenter .gather_img12z h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .gather_img12z h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .gather_img12z h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .gather_img12z div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+
+/*设置平板电脑*/
+.huweiCenter .computer{
+	width: 1210px;
+	height: 80px;
+	margin: 0 auto;
+}
+.huweiCenter .computer h2{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.huweiCenter .computer ul{
+	float: left;
+	margin-top: 20px;
+	width: 500px;
+	height: 40px;
+	margin-left: 20px;
+}
+.huweiCenter .computer li{
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+	
+}
+.huweiCenter .computer li a{
+	color: #888888;
+}
+.huweiCenter .computer li:hover a{
+	color: orange;
+}
+.huweiCenter .computer li:hover{
+	border-bottom: 3px solid orange;
+}
+.huweiCenter .computer h3{
+	display: block;
+	width: 100px;
+	height: 70px;
+	float: right;
+	line-height: 70px;
+	font-size: 20px;
+}
+.huweiCenter .computer h3 a{
+	color: #888888;
+}
+.huweiCenter .computer h3 a:hover{
+	color: red;
+}
+
+.huweiCenter .computer_img{
+	width: 1210px;
+	height: 1075px;
+	margin: 0 auto;
+}
+.huweiCenter .computer_img div{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 10px;
+}
+.huweiCenter .computer_img div:first-child{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../images/gather/computer_img1.jpg);
+}
+.huweiCenter .computer_img div img{
+	width: 150px;
+	height: 200px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+.huweiCenter .computer_img h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .computer_img h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .computer_img h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .computer_img div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+
+/*设置精品电脑*/
+.huweiCenter .computer_boutique{
+	width: 1210px;
+	height: 80px;
+	/*background: pink;*/
+	margin: 0 auto;
+}
+.huweiCenter .computer_boutique h2{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.huweiCenter .computer_boutique ul{
+	float: left;
+	margin-top: 20px;
+	width: 500px;
+	height: 40px;
+	margin-left: 20px;
+}
+.huweiCenter .computer_boutique li{
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+	
+}
+.huweiCenter .computer_boutique li a{
+	color: #888888;
+}
+.huweiCenter .computer_boutique li:hover a{
+	color: orange;
+}
+.huweiCenter .computer_boutique li:hover{
+	border-bottom: 3px solid orange;
+}
+.huweiCenter .computer_boutique h3{
+	display: block;
+	width: 100px;
+	height: 70px;
+	float: right;
+	line-height: 70px;
+	font-size: 20px;
+}
+.huweiCenter .computer_boutique h3 a{
+	color: #888888;
+}
+.huweiCenter .computer_boutique h3 a:hover{
+	color: red;
+}
+
+
+/*设置精品电脑相框*/
+.huweiCenter .computer_img{
+	width: 1210px;
+	height: 1075px;
+	margin: 0 auto;
+}
+.huweiCenter .computer_img div{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 10px;
+}
+.huweiCenter .computer_img div:first-child{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../images/gather/computer_img1.jpg);
+}
+.huweiCenter .computer_img div img{
+	width: 150px;
+	height: 200px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+.huweiCenter .computer_img h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .computer_img h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .computer_img h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .computer_img div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+
+/*设置精品电脑*/
+.huweiCenter .computer_boutique_img{
+	width: 1210px;
+	height: 720px;
+	margin: 0 auto;
+}
+.huweiCenter .computer_boutique_img div{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 10px;
+}
+.huweiCenter .computer_boutique_img div:first-child{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../images/gather/computer_boutique_img1.jpg);
+}
+.huweiCenter .computer_boutique_img div img{
+	width: 150px;
+	height: 200px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+.huweiCenter .computer_boutique_img h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .computer_boutique_img h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .computer_boutique_img h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .computer_boutique_img div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+
+
+/*智能穿戴*/
+
+.huweiCenter .wear{
+	width: 1210px;
+	height: 80px;
+	margin: 0 auto;
+}
+.huweiCenter .wear h2{
+	display: block;
+	float: left;
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	font-size: 20px;
+	margin-left: 10px;
+}
+.huweiCenter .wear ul{
+	float: left;
+	margin-top: 20px;
+	width: 500px;
+	height: 40px;
+	margin-left: 20px;
+}
+.huweiCenter .wear li{
+	float: left;
+	height: 40px;
+	margin-left: 10px;
+	line-height: 40px;
+	
+}
+.huweiCenter .wear li a{
+	color: #888888;
+}
+.huweiCenter .wear li:hover a{
+	color: orange;
+}
+.huweiCenter .wear li:hover{
+	border-bottom: 3px solid orange;
+}
+.huweiCenter .wear h3{
+	display: block;
+	width: 100px;
+	height: 70px;
+	float: right;
+	line-height: 70px;
+	font-size: 20px;
+}
+.huweiCenter .wear h3 a{
+	color: #888888;
+}
+.huweiCenter .wear h3 a:hover{
+	color: red;
+}
+
+/*智能穿戴相框*/
+.huweiCenter .wear_img{
+	width: 1210px;
+	height: 720px;
+	margin: 0 auto;
+}
+.huweiCenter .wear_img div{
+	float: left;
+	width:291px;
+	height: 346px;
+	margin-left: 10px;
+	background: #fff;
+	margin-top: 10px;
+}
+.huweiCenter .wear_img div:first-child{
+	float: left;
+	width:592px;
+	height: 346px;
+	margin-left: 10px;
+	margin-top: 10px;
+	background-image: url(../images/gather/waer_img1.png);
+}
+.huweiCenter .wear_img div img{
+	width: 150px;
+	height: 200px;
+	margin-left: 80px;
+	margin-top: 50px;
+}
+.huweiCenter .wear_img h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .wear_img h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .wear_img h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .wear_img div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+/*设置手环,点击轮播*/
+.huweiCenter .wear_swiper{
+	position: relative;
+	width: 1210px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.huweiCenter .wear_swiper .wear_swiper_img{
+	width: 5000px;
+	height: 300px;
+}
+.huweiCenter .wear_swiper .wear_swiper_img div{
+	float: left;
+	width: 220px;
+	height: 290px;
+	margin-right: 1px;
+	background: #fff;
+}
+.huweiCenter .wear_swiper .wear_swiper_img div img{
+	width: 150px;
+	height: 150px;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+/*设置文字位置*/
+.huweiCenter .wear_swiper .wear_swiper_img h2{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: #000000;
+}
+.huweiCenter .wear_swiper .wear_swiper_img h3{
+	text-align: center;
+	font-size: 12px;
+	color: #888888;
+	margin-top: 5px;
+}
+.huweiCenter .wear_swiper .wear_swiper_img h4{
+	text-align: center;
+	font-size: 12px;
+	color: red;
+	margin-top: 5px;
+}
+.huweiCenter .wear_swiper .wear_swiper_img div:hover{
+	box-shadow: 1px 3px 30px #333333;
+}
+
+/*设置左图标点击滑动图片*/
+.huweiCenter .wear_swiper .wear_swiper_left{
+	position: absolute;
+	width: 20px;
+	height: 50px;
+	top: 100px;
+	left: 0;
+	line-height: 50px;
+	background: #888888;
+	opacity: 0.5;
+}
+/*设置右图标点击滑动图片*/
+.huweiCenter .wear_swiper .wear_swiper_right{
+	position: absolute;
+	width: 20px;
+	height: 50px;
+	top: 100px;
+	line-height: 50px;
+	right: 0;
+	background: #888888;
+	opacity: 0.5;
+}
+.huweiCenter .wear_swiper .iconfont{
+	color: #fff;
+}
+.huweiCenter .wear_swiper .wear_swiper_left:hover{
+	opacity: 1;
+}
+.huweiCenter .wear_swiper .wear_swiper_right:hover{
+	opacity: 1;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863618_nm8w7khnjnd.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="head">
+			<img src="images/head-top.png"/>
+			<span></span>
+			<h1>华为商城</h1>
+		</div>
+		<!--提示网络安全信息-->
+		<div class="prompt">
+			<h2>依据《网络安全法》,为保证您的账号安全与正常使用,请尽快绑定您的手机号,感谢您的理解和支持</h2>
+		</div>
+		<div class="login">
+			<div class="login_Message">
+				<div class="login_Method">
+					<h2><a href="">账号登录</a></h2>
+					<h3><a href="">扫码登录</a>
+						<div class="sweep">
+							<div class="sweep_Img"><img src="images/getqrWeb.png"/></div>
+							<div class="sweep_Phone"><img src="images/qrCode-help.png"/></div>
+							<span>使用<b>华为移动服务APP</b>扫一扫</span>
+							<h4>若您使用华为手机，请进入"设置">"华为帐号"扫码登录。</h4>
+						</div>
+					</h3>
+				</div>
+				<div class="account_Password">
+					<!--设置用户登录框-->
+					<form class="login-form" onsubmit="return false">							
+		                <input name="username" type="text" required="required" placeholder="用户名" />
+		                <input name="password" type="password" required="required" placeholder="密码" />
+		            <div class="verification">
+						<a href=""><i class="iconfont icon-shouji"></i>短信验证码登录</a>
+					</div>
+					<!--设置登录按钮-->
+		             <button class="but" type="submit" name="login-btn">登录</button>
+		          </form>
+		          
+					<div class="remember_Information">
+						<span>记住账号</span>
+						<h3><a href="">更多</a>
+							<div class="more_Information">
+								<ul>
+									<li><a href="">遇到问题</a></li>
+									<li><a href="">更换手机号</a></li>
+									<li><a href="">安全中心</a></li>
+								</ul>
+							</div>
+						</h3>
+					</div>
+					
+					<div class="forget_possword">
+						<h2><a href="register.html">登录注册</a></h2>
+						<span></span>
+						<h3><a href="">忘记密码?</a></h3>
+					</div>
+					
+				</div>
+				<div class="other">
+					<div class="other_Methods">
+						<span></span>
+						<h2>其他登录方式</h2>
+						<b></b>
+					</div>
+					<div class="software">
+						<a href=""><i class="iconfont icon-QQ"></i></a>
+						<a href=""><b class="iconfont icon-umidd17"></b></a>
+						<a href=""><span class="iconfont icon-wuliu"></span></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<script src="js/common/ajax.js"></script>
+	    <script src="js/login.js"></script>
+		<script type="text/javascript">
+			login.init('.login-form');
+		</script>
+	</body>
+</html>

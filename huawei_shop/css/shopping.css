@@ -1,0 +1,449 @@
+/*css reset*/
+*{margin:0px;padding:0px;}
+ul,li,ol{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+a,u{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+#top,#nav#banner{width:1000px;margin:0 auto;}
+body{
+	width: 100%;
+	height: 100%;
+	background: #CCCCCC;
+}
+.head{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.head_ul{
+	width: 100%;
+	height: 30px;
+}
+.head_ul .left{
+	float: left;
+	width: 800px;
+	height: 30px;
+}
+.head_ul .left li{
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+.head_ul .left span{
+	margin-left: 10px;
+	display: inline-block;
+	height: 10px;
+	border: 1px solid #ccc;
+}
+.head_ul .left .downLoad{
+	position: relative;
+	width: 90px;
+}
+.head_ul .left .downLoad span{
+	margin-left: 35px;
+}
+.head_ul .left .downLoad b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+.head_ul .left .more {
+	position: relative;
+}
+.head_ul .left .more b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+.head_ul .left .downLoadAPP{
+	position: absolute;
+	left:-70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	background: orange;
+	display: none;
+	z-index: 10;
+}
+.head_ul .left .downLoadAPP h2{
+	font-size: 12px;
+	color: black;
+	margin-top: -55px;
+	margin-left: 20px;
+}
+.head_ul .left .downLoadAPP h3{
+	font-size: 12px;
+	color: #ccc;
+	margin-top: -30px;
+	margin-left: 60px;
+}
+.head_ul .left .downLoadAPP img{
+	margin: 40px 40px;
+}
+.head_ul .left .more .moreShopping{
+	position: absolute;
+	left: -70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	display: none;
+	background: orange;
+	z-index: 500;
+}
+.head_ul .left .more .moreShopping ul{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.head_ul .left .more .moreShopping li{
+	width: 90px;
+}
+.head_ul .left .more .moreShopping a{
+	color: black;
+}
+.head_ul .left li a{
+	color: #ccc;
+}
+.head_ul .left li a:hover{
+	color: red;
+}
+.head_ul .left .downLoad:hover{
+	color: red;
+}
+.head_ul .left .downLoad:hover .downLoadAPP{
+	display: block;
+}
+.head_ul .left .downLoad:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+
+.head_ul .left .more a:hover{
+	color: red;
+}
+.head_ul .left .more:hover .moreShopping{
+	display: block;
+}
+.head_ul .left .more:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+/*设置右边的ul*/
+.head_ul .right{
+	float: right;	
+	line-height: 30px;
+}
+.head_ul .right li{
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.head_ul .right a{
+	color: #ccc;
+}
+.head_ul .right a:hover{
+color: red;
+}
+/*设置头部logo*/
+.head .head_logo{
+	width: 100%;
+	height: 60px;
+}
+.head .head_logo img{
+	float: left;
+	width: 94px;
+	height: 50px;
+	margin-left: 100px;
+	padding-top: 7px;
+}
+.head .head_logo h3{
+	float: left;
+	margin-left: 30px;
+	line-height: 60px;
+	font-size: 25px;
+	width: 150px;
+	height: 60px;
+}
+.head .head_logo .shop_message{
+	float: right;
+	width: 600px;
+	height: 60px;
+}
+.head .head_logo .shop_cart,.shop_indent,.shop_succeed{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 60px;
+	text-align: center;
+	/*border: 1px solid black;*/
+}
+.head .head_logo .shop_message .iconfont{
+	font-size: 30px;
+
+}
+.head .head_logo .shop_cart .iconfont{
+	color: red;
+}
+.head .head_logo .shop_cart span{
+	position: absolute;
+	display: block;
+	width: 80px;
+	top: 15px;
+	left: 115px;
+	/*height: 1px;*/
+	border: 1px solid red;
+}
+.head .head_logo .shop_cart h4{
+	display: inline-block
+	width: 120px;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	color: red;
+}
+.head .head_logo .shop_indent span{
+	position: absolute;
+	display: block;
+	width: 200px;
+	top: 15px;
+	left: 0;
+	/*height: 1px;*/
+	border: 1px solid #888888;
+	z-index: 0;
+}
+.head .head_logo .shop_indent .icon-dingdan{
+	color: #888888;
+}
+.head .head_logo .shop_indent h4{
+	display: inline-block
+	width: 120px;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	color: #888888;
+}
+.head .head_logo .shop_succeed .icon-zhengque{
+	margin-left: 50px;
+	color: #888888;
+}
+.head .head_logo .shop_succeed span{
+	position: absolute;
+	display: block;
+	width: 80px;
+	top: 15px;
+	left: 30px;
+	/*height: 1px;*/
+	border: 1px solid #888888;
+}
+.head .head_logo .shop_succeed h4{
+	display: inline-block
+	width: 120px;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	color:#888888;
+}
+
+/*设置登录*/
+.center{
+	width: 90%;
+	height: 900px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.center .login{
+	width: 100%;
+	height: 50px;
+	background: peachpuff;
+	margin: 0 auto;
+}
+.center .login h2{
+	float: left;
+	width: 300px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 50px;
+	text-align: center;
+}
+.center .login button{
+	width: 80px;
+	height: 30px;
+	border: none;
+	background: #FF0000;
+	margin-top: 10px;
+	color: #fff;
+}
+.center .shop_commodity{
+	width: 100%;
+	height: 400px;
+	background: #fff;
+	margin-top: 20px;
+	padding-top: 100px;
+}
+.commodity_shopping{
+	width: 200px;
+	height: 250px;
+	margin: 0 auto;
+	text-align: center;
+}
+.commodity_shopping .iconfont{
+	font-size: 80px;
+	color: #888888;
+}
+.commodity_shopping h3{
+	margin-top: 20px;
+	color: #888888;
+}
+.commodity_shopping  button{
+	width: 150px;
+	height: 40px;
+	border: none;
+	background: #FF0000;
+	margin-top: 20px;
+	font-size: 18px;
+	color: #fff;
+}
+.recommend{
+	width: 100%;
+	height: 40px;
+}
+.recommend h2{
+	width: 100px;
+	height: 40px;
+	font-size: 18px;
+	line-height: 40px;
+	
+}
+.recommend_product{
+	width: 100%;
+	height: 250px;
+	background: #fff;
+}
+.recommend_product img{
+	width: 110px;
+	height: 130px;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.recommend_product .phone_one{
+	float: left;
+	width: 18%;
+	height: 250px;
+	/*border: 1px solid black;*/
+	margin-left: 70px;
+}
+.recommend_product .phone_two,.phone_three,.phone_four,.phone_fix{
+	float: left;
+	width: 18%;
+	height: 250px;
+	/*border: 1px solid black;*/
+}
+.recommend_product  h3{
+	margin-top: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+.recommend_product  h3 a{
+		color: #000000;
+}
+.recommend_product  h4{
+	text-align: center;
+	font-size: 12px;
+	margin-top: 30px;
+}
+
+
+/*设置产品保证的信息*/
+
+.pledge{
+	width: 100%;
+	height: 400px;
+	background: #EEEEEE;
+}
+.pledge_content{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #333333;
+}
+.pledge_content li{
+	display: block;
+	width: 250px;
+	height: 50px;
+	float: left;
+	margin-left: 30px;
+	line-height: 150px;
+}
+.pledge_content li .iconfont{
+	font-size: 40px;
+	color: red;
+}
+.pledge_content li b{
+	color: #333333;
+	margin-left: 20px;
+}
+.pledge_top{
+	width: 100%;
+	height: 100px;
+}
+.pledge_top .top_top{
+	width: 100%;
+	height: 50px;
+}
+.pledge_top .top_top li{
+	float: left;
+	width: 30px;
+	height: 40px;
+	margin-left: 30px;
+	margin-right: 110px;
+	border-bottom: 3px solid #333333;
+}
+.pledge_top .top_buttom{
+	width: 100%;
+	height: 50px;
+}
+.pledge_top .top_buttom li{
+	float: left;
+	width: 90px;
+	height: 40px;
+	font-size: 12px;
+	margin-left: 30px;
+	margin-right:50px;
+	color: #333333;
+	line-height: 40px;
+}
+.pledge .pledge_buttom{
+	width: 100%;
+	height: 200px;
+}
+.pledge_buttom ul{
+	float: left;
+	width: 90px;
+	height: 200px;
+	margin-left: 30px;
+	margin-right:50px;
+	/*text-align: center;*/
+	/*padding-top: 30px;*/
+}
+.pledge_buttom ul li{
+	width: 100%;
+	height: 30px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.pledge_buttom ul li a{
+	color: #888888;
+}
+

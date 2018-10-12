@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863618_eer7ot4apch.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="head">
+			<img src="images/head-top.png"/>
+			<span></span>
+			<h1>华为商城</h1>
+		</div>
+		<div class="center">
+			<div class="register">
+				<!--设置注册界面的头部-->
+				<div class="register_Method">
+					<div class="register_phone">
+						<i class="iconfont icon-shouji"></i>
+						<a href="">手机号</a>
+					</div>
+					<div class="register_Email">
+						<i class="iconfont icon-1"></i>
+						<a href="">电子邮箱</a>
+					</div>
+					<div class="haveLogin">
+						<span>已有华为账号</span>
+						<a href="login.html">登录></a>
+					</div>
+				</div>
+				
+				<!--设置注册信息-->
+				<div class="register_Message">
+					<!--设置国家地区-->
+					<div class="state">
+					<h3>国家 / 地区</h3>
+					<div class="world_State">
+						<h4>中国</h4>
+						<span></span>
+					</div>
+					</div>			
+					<!--输入电话号码-->
+				<div class="regiter_text"> 
+					<div class="phone_H">
+						<h3>+86(中国)</h3>
+						<span></span>
+					</div>
+					<input type="" name="" id="" value="" placeholder="&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp请输入手机号码" />
+				</div>
+				<!--短信验证码-->
+				 <div class="all">
+            <form class="login-form" onsubmit="return false" onsubmit="return false">
+                <input name="username" type="text" required="required" placeholder="用户名"  value=""/>
+                <input name="password" type="password" required="required" placeholder="密码" value=""/>
+
+                <button class="but" type="submit" name="login-btn">注册</button>
+            </form>
+				 
+				</div>
+				
+			
+			</div>
+		</div>
+		
+		
+	<script src="js/common/ajax.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+        register.init('.login-form');
+    </script>
+	</body>
+</html>

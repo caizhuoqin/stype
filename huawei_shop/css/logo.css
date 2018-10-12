@@ -1,0 +1,1174 @@
+/*css reset*/
+*{margin:0px;padding:0px;}
+ul,li,ol{list-style:none;}
+b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+a,u{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+#top,#nav#banner{width:1000px;margin:0 auto;}
+body{
+	width: 100%;
+}
+/*设置华为首页的头部图片*/
+.headImg{
+	width:100%;
+	height:90px;
+	position: relative;
+}
+.headImg img{
+	width:100%;
+	height: 100%;
+}
+.headImg .icon-cha{
+	position: absolute;
+	left: 80%;
+	top: 40%;
+	font-size: 30px;
+}
+.headImg a{
+	color: #333333;
+}
+
+/*头部的logo*/
+.head{
+	width: 100%;
+	height: 100px;
+}
+/*设置头部的第一个ul*/
+.head .left{
+	float: left;
+	width: 800px;
+	height: 30px;
+}
+.head .left li{
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+/*给li最右边添加一条分隔线*/
+.head .left span{
+	margin-left: 10px;
+	display: inline-block;
+	height: 10px;
+	border: 1px solid #ccc;
+}
+/*给downLoad设置一个定位,然后设置下拉框*/
+.head .left .downLoad{
+	position: relative;
+	width: 90px;
+}
+.head .left .downLoad span{
+	margin-left: 35px;
+}
+
+/*在downLoad的右边设置一个小三角形*/
+.head .left .downLoad b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+
+/*给more设置一个定位,然后设置下拉框*/
+.head .left .more {
+	position: relative;
+}
+/*在more的右边设置一个小三角形*/
+.head .left .more b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+/*downLoad的下拉框*/
+.head .left .downLoadAPP{
+	position: absolute;
+	left:-70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	background: #fff;
+	display: none;
+	z-index: 10;
+}
+/*在downLoad下拉框里面设置内容*/
+.head .left .downLoadAPP h2{
+	font-size: 12px;
+	color: black;
+	margin-top: -55px;
+	text-align: center;
+}
+.head .left .downLoadAPP h3{
+	font-size: 12px;
+	color: #ccc;
+	margin-top: -30px;
+	margin-left: 60px;
+}
+.head .left .downLoadAPP img{
+	margin: 40px 40px;
+}
+/*给more的下拉框*/
+.head .left .more .moreShopping{
+	position: absolute;
+	left: -70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	display: none;
+	background: #fff;
+	z-index: 500;
+}
+/*给more下拉框添加内容*/
+.head .left .more .moreShopping ul{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.head .left .more .moreShopping li{
+	width: 90px;
+}
+.head .left .more .moreShopping a{
+	color: black;
+}
+.head .left li a{
+	color: #ccc;
+}
+.head .left li a:hover{
+	color: red;
+}
+.head .left .downLoad:hover{
+	color: red;
+}
+/*鼠标滑过downLoad,下拉框显示出来*/
+.head .left .downLoad:hover .downLoadAPP{
+	display: block;
+}
+/*鼠标滑过downLoad右边的三角形的方向发生改变*/
+.head .left .downLoad:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+
+.head .left .more a:hover{
+	color: red;
+}
+.head .left .more:hover .moreShopping{
+	display: block;
+}
+/*鼠标滑过more右边的三角形的方向发生改变*/
+.head .left .more:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+/*设置右边的ul*/
+.head .right{
+	float: right;	
+	line-height: 30px;
+}
+.head .right li{
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+/*设置右边li右边的分隔线*/
+.head .right span{
+	margin-left: 10px;
+	display: inline-block;
+	height: 10px;
+	border: 1px solid #ccc;
+}
+/*购物车小图标*/
+.head .right .iconfont{
+	font-size: 12px;
+	margin-right: 10px;
+}
+.head .right .Shopping{
+	position: relative;
+	margin-right: 10px;
+}
+.head .right .Shopping .Shopping_text{
+	position: absolute;
+	right: 20px;
+	width: 500px;
+	height: 250px;
+	background: #fff;
+	border:1px solid black;
+	/*background: orange;*/
+	display: none;
+	z-index: 10;
+}
+.head .right .Shopping .Shopping_text img{
+	width: 100px;
+	height: 80px;
+	margin-left: 180px;
+	margin-top: 50px;
+}
+.head .right .Shopping .Shopping_text h3{
+	color: #ccc;
+	text-align: center;
+}
+.head .right a{
+	color: #ccc;
+}
+.head .right a:hover{
+color: red;
+}
+/*鼠标滑过Shopping 下拉框显示*/
+.head .right .Shopping:hover .Shopping_text{
+	display: block;
+}
+
+
+/*设置logo图标*/
+.logo {
+	width: 100%;
+	height: 50px;
+	/*border: 1px solid #ccc;*/
+	padding-top: 40px;
+	
+}
+.logo img{
+	float: left;
+	width: 240px;
+	height: 50px;
+	margin-left: 10px;
+}
+.logo ul{
+	float: left;
+	width: 600px;
+	height: 50px;
+}
+.logo li{
+	position: relative;
+	float: left;
+	width: 90px;
+	font-size: 14px;
+	line-height: 50px;
+	margin-right: 10px;
+}
+
+.logo ul a{
+	display: block;
+	width: 80px;
+	height: 40px;
+	color: black;
+	text-align: center;
+	/*border-bottom: 1px solid black;*/
+}
+.logo ul li:hover{
+	color: orange;
+	border-bottom: 3px solid orange;
+}
+
+.logo .search{
+	position: relative;
+	float:right;
+	margin-right: 30px;
+	width: 300px;
+	height: 30px;
+	border:1px solid #ccc;
+	
+	margin-top: 10px;
+}
+.logo .search input{
+	position: absolute;
+	width:300px;
+	height: 30px;
+	border: none;
+	background: #FFFDEF;
+}
+.logo .search .icon-sousuo{
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	font-size: 30px;
+	line-height: 30px;
+	color: #ccc;	
+}
+.logo .search .huaweiInput{
+	position: absolute;
+	z-index: 1px;
+	width: 135px;
+	height: 30px;
+	top: 0;
+}
+.logo .search .huaweiInput h2{
+	display: block;
+	float: left;
+	width: 70px;
+	height: 15px;
+	background: #ccc;
+	font-size: 12px;
+	margin-top:8px;
+	margin-left: 10px;	
+}
+.logo .search .huaweiInput h3{
+	display: block;
+	float: left;
+	width: 45px;
+	height: 15px;
+	background: #ccc;
+	font-size: 12px;
+	margin-top:8px;
+	margin-left: 10px;	
+}
+.logo .search .huaweiInput a:hover{
+	color: red;
+}
+
+
+/*设置轮播图*/	
+.lunbo{
+	width: 100%;
+	height: 450px;
+	position: relative;
+}
+.lunbo .lunbo_img{
+	width: 100%;
+	height: 450px;
+}
+.lunbo .lunbo_img img{
+	width: 100%;
+	height: 100%;
+}
+/*设置轮播图层的,产品介绍*/
+.lunbo .product{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 240px;
+	height: 450px;
+	z-index: 0.1;	
+}
+/*设置透明度,而且不影响子集元素的透明度*/
+.lunbo .product .ul_phone{
+	background: #ccc;
+	background-color: rgba(0,0,0,0.7)!important;
+	background-color: #000;
+	filter:Alpha(opacity=70);
+}
+
+.lunbo .product .ul_phone li{
+	position: relative;
+	width: 240px;
+	height: 65px;	
+	padding-top: 10px;
+	color: #333333;
+}
+.lunbo .product h3{
+	margin-left: 10px;
+}
+.lunbo .product  .ul_phone li span{
+	display: block;
+	width: 220px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.lunbo .product .ul_phone li span b{
+	float: right;
+}
+
+/*设置第一个li的下拉列表*/
+.lunbo .p_phone{
+	position: absolute;
+	top: 0px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 10;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_one:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_one:hover .p_phone{
+	display: block;
+}
+.product_one .p_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_one .p_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_one .p_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+.product_one .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;
+	
+}
+.p_phone  .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+.p_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+.p_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.p_phone .huawei_phone .ul_top li a:hover{
+	color: red;
+}
+.p_phone  .huawei_phone .ul_buttom {
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+.p_phone .huawei_phone .ul_buttom li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+.p_phone .huawei_phone .ul_buttom li a{
+	color: #333333;
+}
+.p_phone .huawei_phone .ul_buttom li a:hover{
+	color:#333333;
+}
+.p_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+.p_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*.p_phone .huawei_img div:last-child{
+	border: none;
+}*/
+
+.p_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.p_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+.p_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+.p_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
+
+
+/*设置第二个下拉列表的头部*/
+.product_two .ptwo_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_two .ptwo_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_two .ptwo_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置第二个li的下拉列表内容*/
+.lunbo .pTwo_phone{
+	position: absolute;
+	top: -75px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 12;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_two:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_two:hover .pTwo_phone{
+	display: block;
+}
+.pTwo_phone .product_two .p_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+/*设置下拉表单的头部*/
+.pTwo_phone .product_two .p_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.pTwo_phone .product_two .p_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置下拉表单中部的位置内容*/
+.pTwo_phone .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;	
+}
+/*设置中部的第一个ul*/
+.pTwo_phone  .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+/*给中部ul 的li的设置内容*/
+.pTwo_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+/*设置中部ul 的li的a设置颜色*/
+.pTwo_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.pTwo_phone .huawei_phone .ul_top li a:hover{
+	color: red;
+}
+/*设置下拉列表底部的图片内容*/
+.pTwo_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+/*给每个div设置好宽度和高度*/
+.pTwo_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*.p_phone .huawei_img div:last-child{
+	border: none;
+}*/
+/*设置图片大小*/
+.pTwo_phone .huawei_img img{
+	width: 141px;
+	height: 141px;
+}
+/*设置div里面文字的内容*/
+.pTwo_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.pTwo_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+/*去除最后一个div的右边框线*/
+.pTwo_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+/*滑过div每个div都会有动画效果*/
+.pTwo_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
+
+
+/*设置第三个li及下拉列表*/
+
+/*设置第三个下拉列表的头部*/
+.product_three .pthree_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_three .pthree_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_three .pthree_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置第二个li的下拉列表内容*/
+.lunbo .pThree_phone{
+	position: absolute;
+	top: -150px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 12;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_three:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_three:hover .pThree_phone{
+	display: block;
+}
+.pThree_phone .product_three .p_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+/*设置下拉表单的头部*/
+.pThree_phone .product_three .p_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.pThree_phone .product_three .p_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置下拉表单中部的位置内容*/
+.pThree_phone .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;	
+}
+/*设置中部的第一个ul*/
+.pThree_phone  .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+/*给中部ul 的li的设置内容*/
+.pThree_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+/*设置中部ul 的li的a设置颜色*/
+.pThree_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.pThree_phone .huawei_phone .ul_top li a:hover{
+	color: red;
+}
+/*设置下拉列表底部的图片内容*/
+.pThree_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+/*给每个div设置好宽度和高度*/
+.pThree_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*设置图片大小*/
+.pThree_phone .huawei_img img{
+	width: 141px;
+	height: 141px;
+}
+/*设置div里面文字的内容*/
+.pThree_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.pThree_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+/*去除最后一个div的右边框线*/
+.pThree_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+/*滑过div每个div都会有动画效果*/
+.pThree_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
+
+
+/*设置第四个li的内容及下拉列表*/
+/*设置第四个下拉列表的头部*/
+.product_four .pfour_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_four .pfour_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_four .pfour_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置第二个li的下拉列表内容*/
+.lunbo .pFour_phone{
+	position: absolute;
+	top: -225px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 12;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_four:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_four:hover .pFour_phone{
+	display: block;
+}
+.pFour_phone .product_four .p_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+/*设置下拉表单的头部*/
+.pFour_phone .product_four .pfour_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.pFour_phone .product_four .pfour_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置下拉表单中部的位置内容*/
+.pFour_phone .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;	
+}
+/*设置中部的第一个ul*/
+.pFour_phone .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+/*给中部ul 的li的设置内容*/
+.pFour_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+/*设置中部ul 的li的a设置颜色*/
+.pFour_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.pFour_phone .huawei_phone .ul_top li a:hover{
+	color: red;
+}
+/*设置下拉列表底部的图片内容*/
+.pFour_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+/*给每个div设置好宽度和高度*/
+.pFour_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*.p_phone .huawei_img div:last-child{
+	border: none;
+}*/
+/*设置图片大小*/
+.pFour_phone .huawei_img img{
+	width: 141px;
+	height: 141px;
+}
+/*设置div里面文字的内容*/
+.pFour_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.pFour_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+/*去除最后一个div的右边框线*/
+.pFour_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+/*滑过div每个div都会有动画效果*/
+.pFour_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
+/*设置第五个li的内容及下拉列表*/
+/*设置第五个下拉列表的头部*/
+.product_five .pfive_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_five .pfive_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_five .pfive_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置第二个li的下拉列表内容*/
+.lunbo .pFive_phone{
+	position: absolute;
+	top: -300px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 12;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_five:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_five:hover .pFive_phone{
+	display: block;
+}
+.pFive_phone .product_five .pfive_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+/*设置下拉表单的头部*/
+.pFive_phone .product_five .pfive_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.pFive_phone .product_five .pfive_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置下拉表单中部的位置内容*/
+.pFive_phone .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;	
+}
+/*设置中部的第一个ul*/
+.pFive_phone .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+/*给中部ul 的li的设置内容*/
+.pFive_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+/*设置中部ul 的li的a设置颜色*/
+.pFive_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.pFive_phone .huawei_phone .ul_top li a:hover{
+	color: red;
+}
+/*设置下拉列表底部的图片内容*/
+.pFive_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+/*给每个div设置好宽度和高度*/
+.pFive_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*.p_phone .huawei_img div:last-child{
+	border: none;
+}*/
+/*设置图片大小*/
+.pFive_phone .huawei_img img{
+	width: 141px;
+	height: 141px;
+}
+/*设置div里面文字的内容*/
+.pFive_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.pFive_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+/*去除最后一个div的右边框线*/
+.pFive_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+/*滑过div每个div都会有动画效果*/
+.pFive_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
+
+
+/*设置第六个li的内容及下拉列表*/
+/*设置第六个下拉列表的头部*/
+.product_six .psix_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+.product_six .psix_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.product_six .psix_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置第二个li的下拉列表内容*/
+.lunbo .pSix_phone{
+	position: absolute;
+	top: -375px;
+	left: 240px;
+	width: 700px;
+	height: 450px;
+	background: #FFFFFF;
+	z-index: 12;
+	display: none;
+}
+/*滑过li的时候li的背景变为红色*/
+.lunbo .product .product_six:hover{
+	background: #333333;
+	color: #fff;
+}
+/*滑动到li的时候下拉表单显示出来*/
+.lunbo .product .product_six:hover .pSix_phone{
+	display: block;
+}
+.pSix_phone .product_six .pfive_phoneChannel{
+	width: 100%;
+	height: 70px;
+	border-top:1px solid #888888;
+}
+/*设置下拉表单的头部*/
+.pSix_phone .product_six .pfive_phoneChannel h4{
+	width: 420;
+	height: 70px;
+	line-height: 70px;
+	color: red;
+	margin-left: 30px;
+}
+.pSix_phone.product_six .pfive_phoneChannel h4 i{
+	float: right;
+	margin-right: 30px;
+}
+/*设置下拉表单中部的位置内容*/
+.pSix_phone .huawei_phone{
+	width: 700px;
+	height: 140px;
+	border-top: 1px solid #888888;	
+}
+/*设置中部的第一个ul*/
+.pSix_phone  .huawei_phone .ul_top{
+	width: 700px;
+	height: 70px;
+	line-height: 70px;
+}
+/*给中部ul 的li的设置内容*/
+.pSix_phone .huawei_phone .ul_top li{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+	width: 130px;
+	height: 70px;
+	float: left;
+	margin-top: -10px;
+}
+/*设置中部ul 的li的a设置颜色*/
+.pSix_phone .huawei_phone .ul_top li a{
+	color: #333333;
+}
+.pSix_phone.huawei_phone .ul_top li a:hover{
+	color: red;
+}
+/*设置下拉列表底部的图片内容*/
+.pSix_phone .huawei_img{
+	width: 698px;
+	height: 236px;
+	/*border: 1px solid #ccc;*/
+}
+/*给每个div设置好宽度和高度*/
+.pSix_phone .huawei_img div{
+	float: left;
+	width: 153px;
+	height: 216px;
+	border: 1px solid #E7E1CD;
+	border-right: none;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/*.p_phone .huawei_img div:last-child{
+	border: none;
+}*/
+/*设置图片大小*/
+.pSix_phone .huawei_img img{
+	width: 141px;
+	height: 141px;
+}
+/*设置div里面文字的内容*/
+.pSix_phone .huawei_img div p{
+	display: inline-block;
+	width: 172px;
+	font-size: 14px;
+	color: #333333;
+	margin-left: -20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.pSix_phone .huawei_img div h5{
+	margin-top: 10px;
+	text-align: center;
+	color: red;
+}
+/*去除最后一个div的右边框线*/
+.pSix_phone .huawei_img  a:last-child div{
+	border-right: none;
+}
+/*滑过div每个div都会有动画效果*/
+.pSix_phone .huawei_img div:hover{
+	  margin-top: -1px;
+	  border-top: none;
+	  box-shadow: 1px 1px 3px #CCCCCC;
+}
