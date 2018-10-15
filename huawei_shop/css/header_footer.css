@@ -8,15 +8,13 @@ h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
 #top,#nav#banner{width:1000px;margin:0 auto;}
 body{
 	width: 100%;
+	height: 100%;
+	background: #CCCCCC;
 }
-.foot{
-	width:100%;
-	height: 400px;
-	background: yellow;
-}
+/*设置尾部内容*/
 .pledge{
 	width: 100%;
-	height: 420px;
+	height: 400px;
 	background: #EEEEEE;
 }
 .pledge_content{
@@ -91,22 +89,4 @@ body{
 }
 .pledge_buttom ul li a{
 	color: #888888;
-}
-.pledge_buttom ul li a:hover{
-	color: red;
-}
-/*设置点击回到头部按钮*/
-.upward{
-	position: fixed;
-	right: 10px;
-	top: 500px;
-	width: 50px;
-	height: 50px;
-	z-index: 2;
-	line-height: 50px;
-	text-align: center;
-	cursor:pointer;
-}
-.upward .iconfont{
-	font-size: 50px;
 }

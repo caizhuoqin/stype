@@ -13,6 +13,7 @@ body{
 	width: 1210px;
 	height: 80px;
 	margin: 0 auto;
+	/*background: red;*/
 }
 .huweiCenter .home h2{
 	display: block;
@@ -168,11 +169,11 @@ body{
 	margin: 0 auto;
 	overflow: hidden;
 }
-.huweiCenter .home_swiper .home_swiper_img{
+/*.huweiCenter .home_swiper .home_swiper_img{
 	width: 5000px;
 	height: 300px;
 }
-.huweiCenter .home_swiper .home_swiper_img div{
+/*.huweiCenter .home_swiper .home_swiper_img div{
 	float: left;
 	width: 220px;
 	height: 290px;
@@ -184,7 +185,7 @@ body{
 	height: 150px;
 	margin-left: 20px;
 	margin-top: 30px;
-}
+}*/
 
 /*设置文字位置*/
 .huweiCenter .home_swiper .home_swiper_img h2{
@@ -233,7 +234,7 @@ body{
 }
 .huweiCenter .home_swiper .iconfont{
 	color: #fff;
-}
+}*/
 .huweiCenter .home_swiper .wear_swiper_left:hover{
 	opacity: 1;
 }

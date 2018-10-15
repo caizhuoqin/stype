@@ -31,7 +31,7 @@ var register = (function(){
                     }
                    }
                 
-                sendAjax('http://localhost:8080/huawei_shop/php/register.php', params);
+                sendAjax('http://localhost:8080/gitbut/stype/huawei_shop/php/register.php', params);
                 	}
             }
             this.$usernameInp.onchange = function(){
@@ -44,7 +44,7 @@ var register = (function(){
                         _this.checkName(data);
                     }
                 }
-                sendAjax('http://localhost:8080/huawei_shop/php/check_username.php', params);
+                sendAjax('http://localhost:8080/gitbut/stype/huawei_shop/php/check_username.php', params);
             }
         },
         checkName: function(data) {

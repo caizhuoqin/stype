@@ -26,7 +26,7 @@ var login = (function(){
                         _this.loginSuccess(data);
                     }
                 }
-                sendAjax('http://localhost:8080/huawei_shop/php/login.php', params);
+                sendAjax('http://localhost:8080/gitbut/stype/huawei_shop/php/login.php', params);
             }
         },
         loginSuccess: function(data) {

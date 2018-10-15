@@ -12,7 +12,7 @@ body{
 
 .huweiCenter{
 	width: 100%;
-	min-height: 3000px;
+	min-height: 5000px;
 	background: #CCC;
 }
 .xtb{
@@ -148,12 +148,15 @@ body{
 .xtb_right .top .notice h3{
 	text-align: center;
 	line-height: 40px;
+	color: red;
 }
-.xtb_right .top .swiper{
+.xtb_right .top .swiper-mincontainer{
 	float: left;
 	width: 240px;
 	height: 40px;
-	background: pink;
+	
+	overflow: hidden;
+	line-height: 40px;
 }
 /*设置最右边下面的内容*/
 .xtb_right .buttom{
@@ -214,6 +217,7 @@ body{
 }
 .huweiCenter .center_hot h3{
 	height: 40px;
+	text-align: left;
 	line-height: 40px;
 	font-weight: bold;
 	font-size: 18px;
@@ -290,6 +294,8 @@ body{
 	font-weight: bold;
 	font-size: 18px;
 	}
+	
+	
 /*设置精美电子产品*/
 .huweiCenter .boutique_products{
 	position: relative;
@@ -299,47 +305,46 @@ body{
 	overflow: hidden;
 }
 /*设置全部图片的宽度*/
-.huweiCenter .boutique_products .products_gather{
-	position: absolute;
-	width: 5000px;
+.huweiCenter .boutique_products .swiper-wrapper{
+	width:4000px;
 	height: 300px;
 }
-/*给每一个图片设置一个div*/
-.huweiCenter .boutique_products .products_gather div{
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide{
 	float: left;
-	width: 210px;
+	width: 1210px;
+	height: 300px;
+}
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide div{
+	float:left;
+	width: 299px;
+	margin-left: 2px;
 	height: 290px;
-	margin-right:2px;
+	border-right:1px solid #E7E1CD;
 	background: #fff;
 }
-/*设置每一个图片的大小*/
-.huweiCenter .boutique_products .products_gather img{
-	width: 140px;
-	height: 140px;
-	margin-top: 20px;
-	margin-left: 30px;
-	
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide img{
+	 width: 150px;
+	 height: 150px;
+	 margin-left: 70px;
+	 margin-top: 50px;
 }
-.huweiCenter .boutique_products .products_gather h2{
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide h2,h3,h4{
 	text-align: center;
-	margin-top: 20px;
-	font-size: 14px;
+	margin-top: 5px;
+}
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide h2{
 	color: #000000;
 }
-.huweiCenter .boutique_products .products_gather h3{
-	text-align: center;
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide h3{
 	font-size: 12px;
-	color: #888888;
-	margin-top: 5px;
+	color: #ccc;
 }
-.huweiCenter .boutique_products .products_gather h4{
-	text-align: center;
-	font-size: 12px;
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide h2{
 	color: red;
-	margin-top: 5px;
+	font-size: 12px;
 }
-.huweiCenter .boutique_products .products_gather div:hover{
-	box-shadow: 0px 1px 10px #333333;
+.huweiCenter .boutique_products .swiper-wrapper .swiper-slide div:hover{
+		box-shadow: 1px 1px 10px #333333;
 }
 /*设置向左的小图标*/
 .huweiCenter .boutique_products .boutique_left{
@@ -359,7 +364,7 @@ body{
 	width: 20px;
 	height: 50px;
 	top: 100px;
-	right: 0px;
+	left: 1187px;
 	background: #312E3D;
 	opacity: 0.3;
 	line-height: 50px;
@@ -847,54 +852,7 @@ body{
 .huweiCenter .wear_img div:hover{
 	box-shadow: 1px 3px 30px #333333;
 }
-/*设置手环,点击轮播*/
-.huweiCenter .wear_swiper{
-	position: relative;
-	width: 1210px;
-	height: 300px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-.huweiCenter .wear_swiper .wear_swiper_img{
-	width: 5000px;
-	height: 300px;
-}
-.huweiCenter .wear_swiper .wear_swiper_img div{
-	float: left;
-	width: 220px;
-	height: 290px;
-	margin-right: 1px;
-	background: #fff;
-}
-.huweiCenter .wear_swiper .wear_swiper_img div img{
-	width: 150px;
-	height: 150px;
-	margin-left: 20px;
-	margin-top: 30px;
-}
 
-/*设置文字位置*/
-.huweiCenter .wear_swiper .wear_swiper_img h2{
-	text-align: center;
-	margin-top: 20px;
-	font-size: 14px;
-	color: #000000;
-}
-.huweiCenter .wear_swiper .wear_swiper_img h3{
-	text-align: center;
-	font-size: 12px;
-	color: #888888;
-	margin-top: 5px;
-}
-.huweiCenter .wear_swiper .wear_swiper_img h4{
-	text-align: center;
-	font-size: 12px;
-	color: red;
-	margin-top: 5px;
-}
-.huweiCenter .wear_swiper .wear_swiper_img div:hover{
-	box-shadow: 1px 3px 30px #333333;
-}
 
 /*设置左图标点击滑动图片*/
 .huweiCenter .wear_swiper .wear_swiper_left{
@@ -926,4 +884,13 @@ body{
 }
 .huweiCenter .wear_swiper .wear_swiper_right:hover{
 	opacity: 1;
+}
+
+/*设置手环,点击轮播*/
+.huweiCenter .wear_swiper{
+	position: relative;
+	width: 1210px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
 }

@@ -1,0 +1,777 @@
+body{
+	width: 100%;
+	height: 100%;
+	background: #CCCCCC;
+}
+
+.headder{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.footer{
+	width: 100%;
+	height: 400px;
+	background: #EEEEEE;
+}
+.center{
+	width: 100%;
+	min-height: 2000px;
+	background: pink;
+}
+
+.head{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+}
+.head_ul{
+	width: 100%;
+	height: 30px;
+}
+.head_ul .left{
+	float: left;
+	width: 800px;
+	height: 30px;
+}
+.head_ul .left li{
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+	line-height: 30px;
+}
+.head_ul .left span{
+	margin-left: 10px;
+	display: inline-block;
+	height: 10px;
+	border: 1px solid #ccc;
+}
+.head_ul .left .downLoad{
+	position: relative;
+	width: 90px;
+}
+.head_ul .left .downLoad span{
+	margin-left: 35px;
+}
+.head_ul .left .downLoad b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+.head_ul .left .more {
+	position: relative;
+}
+.head_ul .left .more b{
+	position: absolute;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	margin-left: 10px;
+	border-width: 8px;
+	 border-color: #FF9600 transparent transparent transparent;
+	 border-style: solid;
+}
+.head_ul .left .downLoadAPP{
+	position: absolute;
+	left:-70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	background: orange;
+	display: none;
+	z-index: 10;
+}
+.head_ul .left .downLoadAPP h2{
+	font-size: 12px;
+	color: black;
+	margin-top: -55px;
+	margin-left: 20px;
+}
+.head_ul .left .downLoadAPP h3{
+	font-size: 12px;
+	color: #ccc;
+	margin-top: -30px;
+	margin-left: 60px;
+}
+.head_ul .left .downLoadAPP img{
+	margin: 40px 40px;
+}
+.head_ul .left .more .moreShopping{
+	position: absolute;
+	left: -70px;
+	width: 150px;
+	height: 150px;
+	border:1px solid black;
+	display: none;
+	background: orange;
+	z-index: 500;
+}
+.head_ul .left .more .moreShopping ul{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+.head_ul .left .more .moreShopping li{
+	width: 90px;
+}
+.head_ul .left .more .moreShopping a{
+	color: black;
+}
+.head_ul .left li a{
+	color: #ccc;
+}
+.head_ul .left li a:hover{
+	color: red;
+}
+.head_ul .left .downLoad:hover{
+	color: red;
+}
+.head_ul .left .downLoad:hover .downLoadAPP{
+	display: block;
+}
+.head_ul .left .downLoad:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+
+.head_ul .left .more a:hover{
+	color: red;
+}
+.head_ul .left .more:hover .moreShopping{
+	display: block;
+}
+.head_ul .left .more:hover b{
+	border-color: transparent  transparent #FF9600 transparent;
+	position: absolute;
+	top: 5px;
+}
+/*设置右边的ul*/
+.head_ul .right{
+	position: relative;
+	float: right;	
+	line-height: 30px;
+}
+.head_ul .right li{
+	
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.head_ul .right a{
+	color: #ccc;
+}
+.head_ul .right a:hover{
+color: red;
+}
+.head_ul .right span{
+	/*display: block;*/
+	border-right: 1px solid #ccc;
+	margin-left: 10px;
+}
+/*设置购物车的下拉框*/
+.head_ul .right .shop_cart{
+	position: absolute;
+	width: 480px;
+	height: 250px;
+	border:1px solid #ccc;
+	top: 30px;
+	right: 0px;
+	background:#fff;
+	display: none;
+	z-index: 30;
+	/*box-shadow: 1px 1px 10px #333333;*/
+	border-top: none;
+}
+.head_ul .right .shop_cart h2{
+	text-align: center;
+	margin-top: 50px;
+}
+.head_ul .right .shop_cart .iconfont{
+	font-size: 60px;
+}
+.head_ul .right .shop_cart h4{
+	text-align: center;
+	color: #888888;
+}
+.head_ul .right .shop_cart .btn{
+	width: 100%;
+	height: 40px;
+	margin-top: 15px;
+}
+.head_ul .right .shop_cart .btn a{
+	display: block;
+	width: 180px;
+	height: 40px;
+	border:1px solid #ccc;
+	text-align: center;
+	line-height: 40px;
+	font-size: 16px;
+	color: #ccc;
+	margin-left: 140px;
+}
+.head_ul .right .shop_cart .btn a:hover{
+	border:1px solid red;
+	color: red;
+}
+/*.head_ul .right .shopping:hover{
+	box-shadow: 1px 1px 10px #333333;
+}*/
+.head_ul .right .shopping:hover .shop_cart{	
+	display:block;
+}
+
+/*设置logo*/ 
+.logo{
+	width: 100%;
+	height: 60px;
+}
+.logo .logo_img{
+	float: left;
+	width: 240px;
+	height: 60px;
+	margin-left: 45px;
+}
+.logo .logo_img a{
+	display: block;
+	width:240px;
+	height: 50px;
+	background-image: url(../images/logo.png);
+}
+.logo .product{
+	float: left;
+	width: 500px;
+	height: 60px;
+}
+.logo .product>ul{
+	margin-top: 15px;
+}
+.logo .product>ul>li{
+	/*position: relative;*/
+	float: left;
+	height:60px;
+	margin-left: 15px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.logo .product>li>a{
+	color: #000000;
+}
+.logo .product>ul>li>a:hover{
+	color: red;
+	border-bottom:3px solid orange;
+}
+/*给手机商品设置下拉框*/
+.logo .product .product_iphone{
+	position: absolute;
+	left:0px;
+	top:100px;
+	width:100%;
+	height: 300px;
+	background: #FFFDEF;
+	display: none;
+}
+.logo .product .product_iphone .iphone_all{
+	float: left;
+	width: 100px;
+	height: 30px;
+}
+.logo .product .product_iphone .iphone_set{
+	float: left;
+	width: 800px;
+	height: 60px;
+}
+.logo .product .product_iphone .iphone_set>a{
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #888888;
+}
+.logo .product .product_iphone .iphone_set>a:hover{
+	color: red;
+}
+/*设置手机的价格*/
+.logo .product .product_iphone .price{
+	float: left;
+	width: 100%;
+	height: 250px;
+}
+.logo .product .product_iphone .price ul{
+	margin-left:30px;
+	width: 100%;
+	height: 100%;
+}
+
+.logo .product .product_iphone .price ul li{
+	display: block;
+	float: left;
+	width:198px;
+	height: 240px;
+	margin-left: 2px;
+}
+
+.logo .product .product_iphone .price img{
+	width: 130px;
+	height: 140px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.logo .product .product_iphone .price h5,h6{
+	text-align: center;
+}
+.logo .product .product_iphone .price h5 a{
+	color: #000000;
+}
+.logo .product .product_iphone .price h6{
+	font-size: 12px;
+	color: red;
+}
+.logo .product .product_iphone .price li:hover a{
+	color: red;
+}
+.logo .product ul>li:hover .product_iphone{
+	display: block;
+	
+}
+
+
+/*这是搜索框内容*/
+.logo .logo_right{
+	float: right;
+	position: relative;
+	width: 320px;
+	height: 60px;
+	margin-right: 10px;
+}
+.logo .logo_right .form{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 60px;
+	/*z-index: 10;*/
+}
+.logo .logo_right input{
+	width: 320px;
+	height: 30px;
+	margin-top: 15px;
+	outline:none;
+	border:1px solid #888888;
+}
+/*设置搜索框里面的内容*/
+.logo .logo_right .logo_iPhone{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 150px;
+	height: 30px;
+	z-index: 2;
+	/*display: none;*/
+}
+.logo .logo_right .logo_iPhone>h2{
+	display: block;
+	float: left;
+	/*width: 70px;*/
+	margin-top: 8px;
+	margin-left: 10px;
+	height: 15px;
+	margin-right: 5px;
+	font-size: 12px;
+	background: #CCCCCC;
+}
+.logo .logo_right .logo_iPhone>h3{
+	display: block;
+	float: left;
+	/*width: 70px;*/
+	margin-top: 8px;
+	margin-left: 10px;
+	height: 15px;
+	margin-right: 5px;
+	font-size: 12px;
+	background: #CCCCCC;
+}
+.logo .logo_right .logo_iPhone a{
+	color: #888888;
+}
+.logo .logo_right .logo_iPhone a:hover{
+	color: red;
+}
+/*这只搜索图标的样式*/
+.logo .logo_right .icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 30px;
+	margin-top: 15px;
+	text-align: center;
+	line-height: 30px;
+	z-index: 10;
+}
+.logo .logo_right .icon .iconfont{
+	font-size: 20px;
+	cursor:pointer;
+	color: #888888;
+	
+}
+
+
+/*设置中间部分*/
+.center_h{
+	width: 100%;
+	height: 600px;
+	background: yellow;
+}
+.center_h .center_top{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+}
+.center_h .center_top>ul>li{
+	float: left;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.center_h .center_top>ul>li>a{
+	color:#333333;
+	margin-right: 10px;
+}
+.center_h .magnify{
+	float: left;
+	width: 500px;
+	height: 570px;
+	border:1px solid #000000;
+}
+.center_h .shop_message{
+	float: left;
+	width: 700px;
+	height: 500px;
+}
+.center_h .shop_message>h2{
+	font-size: 20px;
+}
+.center_h .shop_message>h3{
+	margin-top: 10px;
+	font-size: 14px;
+	color: red;
+}
+.center_h .shop_message .message_price{
+	width: 100%;
+	height: 120px;
+}
+.center_h .shop_message .message_price .price_h{
+	width: 100%;
+	height: 30px;
+	background: pink;
+}
+.center_h .shop_message .message_price .price_h span{
+	font-size: 12px;
+	margin-left: 10px;
+}
+.center_h .shop_message .message_price .price_h b{
+	font-size: 18px;
+	color: red;
+	margin-left: 20px;
+}
+.center_h .shop_message .message_price .price_h i{
+	font-size: 14px;
+	color: red;
+	margin-left: 20px;
+}
+.center_h .shop_message .message_price .price_b{
+	width: 100%;
+	height: 80px;
+}
+.price_b .price_b_left{
+	float: left;
+	width: 60px;
+	height: 80px;
+	
+}
+.price_b .price_b_left span{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.price_b .price_b_right{
+	float: left;
+	width: 500px;
+	height: 80px;
+}
+.price_b .price_b_right .top{
+	width: 100%;
+	height: 40px;
+}
+.price_b .price_b_right .top img{
+	display: block;
+	float: left;
+	margin-left: 20px;
+	width: 40px;
+	height: 40px;
+}
+.price_b .price_b_right .top span{
+	display: block;
+	margin-left: 20px;
+	float: left;
+	width: 40px;
+	height: 15px;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	border:1px solid red;
+	margin-top: 15px;
+	color: red;
+}
+.price_b .price_b_right .top a{
+	display: block;
+	float: left;
+	color: #333333;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.price_b .price_b_right .buttom{
+	width: 100%;
+	height: 40px;
+	/*background: red;*/
+}
+.price_b .price_b_right .buttom span{
+	display: block;
+	margin-left: 20px;
+	float: left;
+	width: 60px;
+	height: 15px;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	border:1px solid red;
+	margin-top: 15px;
+	color: red;
+}
+.price_b .price_b_right .buttom b{
+	display: block;
+	float: left;
+	color: #333333;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.shop_message>h4{
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.shop_message>h5{
+	font-size: 12px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.shop_message>h6{
+	margin-top: 15px;
+	border-bottom:1px solid #888888;
+}
+.shop_message .message_buttom{
+	width: 100%;
+	height: 300px;
+	background: #ccc;
+}
+.shop_message .message_buttom .message_img{
+	width: 100%;
+	height: 50px;
+	margin-top:20px;
+}
+.message_buttom .message_img span{
+	display: block;
+	float: left;
+	width:50px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.message_buttom .message_img>ul{
+	float: left;
+}
+.message_buttom .message_img>ul>li{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 40px;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height: 40px;
+	border:1px solid #ccc;
+}
+.message_buttom .message_img ul li:first-child{
+	border:1px solid red;
+}
+.message_buttom .message_img ul li:hover{
+	cursor:pointer;
+	border:1px solid #333333;
+}
+.message_buttom .message_img img{
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.message_buttom .message_img b{
+	display: block;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+.message_buttom .message_edition{
+	width: 100%;
+	height: 40px;
+}
+.message_buttom .message_edition span{
+	display: block;
+	float: left;
+	width:50px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.message_buttom .message_edition ul{
+	float: left;
+	margin-top: 5px;
+}
+.message_buttom .message_edition>ul>li{
+	float: left;
+	display: block;
+	width: 130px;
+	height: 30px;
+	font-size: 12px;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #ccc;
+}
+.message_buttom .message_edition>ul>li:first-child{
+	border:1px solid orange;
+}
+.message_buttom .message_edition>ul>li:hover{
+	cursor:pointer;
+}
+.message_buttom .message_meal{
+	width: 100%;
+	height: 40px;
+}
+.message_buttom .message_meal span{
+	display: block;
+	float: left;
+	width:50px;
+	height: 50px;
+	font-size: 12px;
+	line-height: 40px;
+	margin-left: 10px;
+}
+.message_buttom .message_meal ul{
+	float: left;
+	margin-top: 5px;
+}
+.message_buttom .message_meal ul li{
+	float: left;
+	display: block;
+	width: 130px;
+	height: 30px;
+	font-size: 12px;
+	margin-left: 20px;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #ccc;
+	border:1px solid orange;
+}
+.message_buttom .message_Choose_goods{
+	width: 100%;
+	height: 20px;
+	text-align:left;
+	margin-top: 10px;
+}
+.message_buttom .message_Choose_goods p{
+	display: block;
+	float: left;
+	width: 90px;
+	height: 20px;
+	font-size: 12px;
+	line-height: 20px;
+	/*margin-top: -5px;*/
+	
+}
+.message_buttom .message_Choose_goods b{
+	display: block;
+	float: left;
+	width: 300px;
+	height: 20px;
+	color: red;
+	font-size: 12px;
+	line-height: 20px;
+}
+.message_buttom .message_quantity{
+	width: 100%;
+	height: 50px;
+	background: #008000;
+}
+.message_buttom .message_quantity .quantity{
+	position: relative;
+	float: left;
+	width: 70px;
+	height: 40px;
+	border:1px solid #888888;
+}
+.message_buttom .message_quantity .quantity input{
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	border: none;
+	outline:none;
+}
+.message_buttom .message_quantity .quantity .plus{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	background: #fff;
+	width: 20px;
+	height: 20px;
+	border:1px solid #ccc;
+	outline:none;
+	cursor:pointer
+}
+.message_buttom .message_quantity .quantity .subtract{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	border: none;
+	background: #fff;
+	width: 20px;
+	cursor:pointer;
+	height: 20px;
+	border-top:none;
+	outline:none;
+	border:1px solid #ccc;
+}
+.message_buttom .message_quantity .pay{
+	float: left;
+	width: 200px;
+	height: 40px;
+	margin-left: 10px;
+}
+.message_buttom .message_quantity .pay .pay_shop{
+	width: 100%;
+	height: 100%;
+	background: red;
+	border: none;
+	outline:none;
+	cursor:pointer;
+	color: #fff;
+	font-size: 18px;
+}
+.message_buttom .message_quantity .pay:hover{
+	opacity: 0.9;
+}
