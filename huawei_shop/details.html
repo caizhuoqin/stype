@@ -443,10 +443,26 @@
 				</div>
 				<!--设置放大镜的位置,还没有写-->
 				<div class="magnify">
-					
+					<div class="box">
+				      <div class="show-image">
+				        <img src="images/img_img1.jpg" alt="">
+				        <span class="filter"></span>
+				      </div>
+				      <div class="show-big-image">
+				          <img src="images/img_img1.jpg" alt="" id="big-image">
+				      </div>
+				      <ul class="img-box">
+				        <li class="active"><img src="images/img_img1.jpg" alt=""></li>
+				        <li><img src="images/01_small.jpg" alt=""></li>
+				        <li><img src="images/02_small.jpg" alt=""></li>
+				         <li><img src="images/01_small.jpg" alt=""></li>
+				       
+				      </ul>
+    </div>
 				</div>
+				<!--设置放大镜右边的信息-->
 				<div class="shop_message">
-					<h2>[100元定金]荣耀畅玩8c全网通标版4GB+32GB(极蓝光)</h2>
+					<h2>荣耀畅玩8c全网通标版4GB+32GB(极蓝光)</h2>
 					<h3>定金预定享等多优惠,4GB+32GB版送AM半入耳式耳机</h3>
 					<div class="message_price">
 						<div class="price_h">
@@ -473,8 +489,11 @@
 					</div>
 					<h4>服务说明&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由华为商城负责发货,并提供售后服务</h4>
 					<h5>商品编号&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;221415325432</h5>
+					<!--设置下划线-->
 					<h6></h6>
+					<!--横线下面的内容-->
 					<div class="message_buttom">
+						<!--选择颜色-->
 						<div class="message_img">
 							<span>选择颜色</span>
 							<ul>
@@ -488,6 +507,7 @@
 									<b>铂光金</b></li>
 							</ul>
 						</div>
+						<!--选择版本-->
 						<div class="message_edition">
 							<span>选择版本</span>
 							<ul>
@@ -495,37 +515,66 @@
 								<li>全网通4GB+64GB</li>
 							</ul>
 						</div>
+						<!--选择套餐-->
 						<div class="message_meal">
 							<span>选择套餐</span>
 							<ul>
 								<li>官方标配</li>
 							</ul>
 						</div>
+						<!--已选择商品-->
 						<div class="message_Choose_goods">
 							
 							<p>已选择的商品:</p>
 							<b>幻夜黑/全网通 4GB+32GB/官方标配</b>
 						</div>
+						<!--选择商品数量,和支付定金-->
 						<div class="message_quantity">
 							<div class="quantity">
 								<input type="" name="" id="" value="1" class="purchase_quantity"/>
+								<div class="button">
 								<button class="plus">+</button>
 								<button class="subtract">-</button>
+								</div>
 							</div>
 							<div class="pay">
 								<button class="pay_shop">
-									支付定金
+									加入购物车
 								</button>
+								<button class="pay_order">
+									<a href="login.html">立即下单</a>
+								</button>
+							</div>
+						</div>
+						<!--选择流程-->
+						<div class="message_flow">
+							<div class="flow_left">
+								<h2>购买流程</h2>
+							</div>
+							<div class="flow_right">
+								<ul>
+									<li>1.支付定金(2018.10.08 00:00~2018.10.15 23:19)</li>
+									<li>2.支付尾款(2018.10.16 00:00~2018.10.17 23:19)</li>
+									<li>3.等待发货(按支付尾部事件顺序发货)</li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
+				<div class="box_box">
+			<h2>荣耀畅玩8c全网通标版4GB+32GB(极蓝光) 成功加入购物车</h2>
+			<div class="btn">
+				<button class="btnqd">再逛逛</button>
+				<button class="btngb">去结算</button>
+			</div>
+		</div>
 			</div>
 		</div>
 		<div class="footer"></div>
 		<script type="text/javascript" src="js/jquery.js">
 			
 		</script>
+		<script src="js/glass.js"></script>
 		<script type="text/javascript">
 //			两个尾部
 			$('.footer').load('header.html .footer');
@@ -535,8 +584,55 @@
 			});
 			$('.input').blur(function(){
 				$('.form').css('z-index','1');
+			});
+//			设置放大镜 设置放大镜的倍数
+			glass.init(4);
+			
+			(function(){
+//				点击+按钮,inp里面的数字+1
+				var val = $('.purchase_quantity').val();
+			$('.plus').click(function(){
+				val++;
+				$('.purchase_quantity').val(val);
 			})
+			//				点击-按钮,inp里面的数字-1
+			$('.subtract').click(function(){
+				if(val>1){
+					val--;
+					$('.purchase_quantity').val(val);
+				}
+				else{
+					$('.purchase_quantity').val(1);
+				}
+			})
+			var arr=[];
+			$('.pay_shop').click(function(){
+				$('.box_box').css('display','block');
+				var c = $('.shop_message').find('h2').html();
+				var b = $('.price_h').find('b').html();
+				var h = Number(b.split(' ')[1]);				
+				var obj={
+					商品:c,
+					价格:b,
+					数量:val,
+					小计:h*val,
+				}
+					arr.push(obj);
+					localStorage.arr=JSON.stringify(arr);
+					console.log(localStorage.arr)
+						
+					})
+					
+					$('.box_box').find('.btnqd').click(function(){
+						$('.box_box').css('display','none');
+					})
+					$('.box_box').find('.btngb').click(function(){
+						window.location.href="shopping.html";
+					})
+					
+					}())
 		</script>
+		
 	</body>
 	
 	</script>

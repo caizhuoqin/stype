@@ -1,13 +1,13 @@
 body{
 	width: 100%;
 	height: 100%;
-	background: #CCCCCC;
 }
 
 .headder{
 	width: 100%;
-	height: 100px;
+	height: 90px;
 	background: #fff;
+	border-bottom:3px solid #ccc;
 }
 .footer{
 	width: 100%;
@@ -16,8 +16,8 @@ body{
 }
 .center{
 	width: 100%;
-	min-height: 2000px;
-	background: pink;
+	min-height: 700px;
+	margin-top: 10px;
 }
 
 .head{
@@ -179,7 +179,7 @@ color: red;
 	width: 480px;
 	height: 250px;
 	border:1px solid #ccc;
-	top: 30px;
+	top: 10px;
 	right: 0px;
 	background:#fff;
 	display: none;
@@ -271,9 +271,10 @@ color: red;
 	left:0px;
 	top:100px;
 	width:100%;
-	height: 300px;
-	background: #FFFDEF;
+	height:300px;
+	background: #fff;
 	display: none;
+	z-index: 305;
 }
 .logo .product .product_iphone .iphone_all{
 	float: left;
@@ -333,8 +334,7 @@ color: red;
 	color: red;
 }
 .logo .product ul>li:hover .product_iphone{
-	display: block;
-	
+	display: block;	
 }
 
 
@@ -422,8 +422,8 @@ color: red;
 /*设置中间部分*/
 .center_h{
 	width: 100%;
-	height: 600px;
-	background: yellow;
+	height: 700px;
+	background: #fff;
 }
 .center_h .center_top{
 	width: 100%;
@@ -439,12 +439,76 @@ color: red;
 	color:#333333;
 	margin-right: 10px;
 }
+
+
+/*设置放大镜*/
 .center_h .magnify{
+	position: relative;
 	float: left;
 	width: 500px;
-	height: 570px;
-	border:1px solid #000000;
+	height: 670px;
+	z-index: 1;
 }
+.center_h .magnify .box {
+	 padding: 20px;
+		    }
+.center_h .magnify .show-image {
+      position: relative;
+      width: 400px;
+      font-size: 0;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      z-index: 1;
+    }
+.center_h .magnify .show-image img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+.center_h .magnify .filter {
+      position: absolute;
+      left: 0px;
+      top:0;
+      width: 150px;
+      height: 150px;
+      background: rgba(0,0,0,0.6);
+      cursor: move;
+      display: none;
+      z-index: 1;
+    }
+.center_h .magnify .img-box {
+      padding: 10px;
+    }
+.center_h .magnify .img-box>li {
+      display: inline-block;
+      border: 1px solid transparent;
+      margin-left: 10px;
+    }
+.center_h .magnify .img-box>li img{
+      max-width: 50px;
+      max-height: 50px;
+    }
+.center_h .magnify .img-box>li:hover,
+.center_h .magnify .img-box>li.active {
+      border: 1px solid #000;
+    }
+.center_h .magnify .show-big-image {
+      position: absolute;
+      left: 500px;
+      top: 20px;
+      width: 450px;
+      height: 450px;
+      overflow: hidden;
+      border: 1px solid #eee;
+      display: none;
+    }
+.center_h .magnify .show-big-image img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1080px;
+    }
+
+/*设置放大镜右边的信息*/
 .center_h .shop_message{
 	float: left;
 	width: 700px;
@@ -465,7 +529,6 @@ color: red;
 .center_h .shop_message .message_price .price_h{
 	width: 100%;
 	height: 30px;
-	background: pink;
 }
 .center_h .shop_message .message_price .price_h span{
 	font-size: 12px;
@@ -577,7 +640,6 @@ color: red;
 .shop_message .message_buttom{
 	width: 100%;
 	height: 300px;
-	background: #ccc;
 }
 .shop_message .message_buttom .message_img{
 	width: 100%;
@@ -662,14 +724,14 @@ color: red;
 	width: 100%;
 	height: 40px;
 }
-.message_buttom .message_meal span{
+.message_buttom .message_meal>span{
 	display: block;
 	float: left;
 	width:50px;
 	height: 50px;
 	font-size: 12px;
 	line-height: 40px;
-	margin-left: 10px;
+	margin-left: -50px;
 }
 .message_buttom .message_meal ul{
 	float: left;
@@ -715,38 +777,42 @@ color: red;
 .message_buttom .message_quantity{
 	width: 100%;
 	height: 50px;
-	background: #008000;
+	margin-top: 10px;
 }
 .message_buttom .message_quantity .quantity{
-	position: relative;
 	float: left;
 	width: 70px;
 	height: 40px;
+	background:#fff;
 	border:1px solid #888888;
 }
 .message_buttom .message_quantity .quantity input{
+	float: left;
 	width: 50px;
 	height: 40px;
 	text-align: center;
 	border: none;
 	outline:none;
 }
+.message_buttom .message_quantity .button{
+	float: left;
+	width: 20px;
+	height: 40px;
+	/*background: red;*/
+	margin-top:-4px;
+}
 .message_buttom .message_quantity .quantity .plus{
-	position: absolute;
-	top: 0;
-	right: 0;
 	border: none;
 	background: #fff;
 	width: 20px;
 	height: 20px;
 	border:1px solid #ccc;
 	outline:none;
-	cursor:pointer
+	cursor:pointer;
+	
 }
+
 .message_buttom .message_quantity .quantity .subtract{
-	position: absolute;
-	top: 20px;
-	right: 0;
 	border: none;
 	background: #fff;
 	width: 20px;
@@ -758,12 +824,13 @@ color: red;
 }
 .message_buttom .message_quantity .pay{
 	float: left;
-	width: 200px;
+	width: 500px;
 	height: 40px;
 	margin-left: 10px;
 }
 .message_buttom .message_quantity .pay .pay_shop{
-	width: 100%;
+	float: left;
+	width: 200px;
 	height: 100%;
 	background: red;
 	border: none;
@@ -772,6 +839,97 @@ color: red;
 	color: #fff;
 	font-size: 18px;
 }
+.message_buttom .message_quantity .pay .pay_order{
+	float: left;
+	width: 200px;
+	height: 100%;
+	background: red;
+	border: none;
+	outline:none;
+	cursor:pointer;
+	color: #fff;
+	font-size: 18px;
+	margin-left: 30px;
+}
+.message_buttom .message_quantity .pay .pay_order a{
+	display: block;
+	width: 200px;
+	height: 30px;
+	color: #fff;
+	line-height: 30px;
+}
 .message_buttom .message_quantity .pay:hover{
 	opacity: 0.9;
 }
+/*设置购买流程*/
+.message_buttom .message_flow{
+	width: 100%;
+	height: 80px;
+	margin-top: 10px;
+}
+.message_buttom .message_flow .flow_left{
+	float: left;
+	width: 90px;
+	height: 80px;
+}
+.message_buttom .message_flow .flow_left h2{
+	border:1px solid red;
+	color: red;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 0px 50px 50px 0px;
+}
+.message_buttom .message_flow .flow_right{
+	width: 500px;
+	height: 80px;
+}
+.message_buttom .message_flow .flow_right li{
+	font-size: 12px;
+	line-height: 20px;
+}
+	.box_box{
+	   		position:fixed;
+	   		top:20%;
+	   		left:50%;
+	   		width: 400px;
+	   		height: 200px;
+	   		margin-left: -250px;
+			margin-top: 100px;	   		
+	   		border: 1px solid black;
+	   		background:#fff;
+	   		z-index: 305;
+	   		display: none;
+	   		}
+	   	.box_box h2{
+	   		display: block;
+	   		width: 350px;
+	   		padding-top: 30px;
+	   		height: 70px;
+	   		margin: 0 auto;
+	   		font-size: 20px;
+	   	}
+	   	.box_box h3{
+	   		display: block;
+			text-align: center;
+			margin-top: 50px;
+	   	}
+	   	.box_box .btn{
+	   		width: 400px;
+	   		height: 50px;
+	   		margin-top:20px;
+	   	}
+	   	.box_box .btn button{
+	   		width: 150px;
+	   		height: 50px;
+	   		background:#fff;
+	   		color: #000;
+	   		margin-left: 30px;
+	   		border:1px solid #ccc;
+	   		/*border: none;*/
+	   	}
+	   	.box_box .btn button:last-child{
+	   		background: red;
+	   	}
+	   	.box_box .btn button:hover{
+	   		border:1px solid #333333;
+	   	}

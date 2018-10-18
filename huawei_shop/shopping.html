@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
-		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863618_ym0ujxk80i.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863618_9k98xllat74.css"/>
 		<title></title>
 	</head>
 	<body>
@@ -85,7 +85,38 @@
 					<h3>您的购物车什么都没有哦~</h3>
 					<a href="huawei.html"><button>去逛逛</button></a>
 				</div>
-				
+				<div class="shop_cat_box">
+					<div class="shop_cat">
+					<ul>
+						<li><i class="iconfont icon-xuanze1"></i><span>全选</span></li>
+						<li>商品</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>小计</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="shop_cat_1">
+					<div class="item1">
+						<a href=""><i class="iconfont icon-xuanze1"></i></a>
+						<img src="images/gather/gather2.jpg" alt="" />
+					</div>
+					<div class="item2">
+						荣耀V10 全网通高配版 6gb+64gb(魅力红)
+					</div>
+					<div class="item3">¥ 1999.00</div>
+					<div class="item4">
+						
+						<input type="text" name="carbuy" value="1" autocomplete="off" class="goods_num J_goodsNum"> 
+						<div>
+							<span >-</span>
+							<span>+</span>
+						</div>
+					</div>
+					<div class="item5">¥ 1999.00</div>
+					<div class="item6"> <button>删除</button></div>
+				</div>
+				</div>
 			</div>
 			<!--热销推荐-->
 			<div class="recommend">
@@ -130,6 +161,15 @@
 				</div>
 				
 			</div>
+		
+			<div class="box_box">
+			<h2 class="move">提示框</h2>
+			<h3>你确定要删除这条数据么?</h3>
+			<div class="btn">
+				<button class="btnqd">确认</button>
+				<button class="btngb">关闭</button>
+			</div>
+		</div>
 		
 		</div>
 		
@@ -209,5 +249,18 @@
 		</div>
 		</div>
 		
+		<script type="text/javascript" src="js/jquery.js"> </script>
+		<script type="text/javascript">
+			var  str =localStorage.arr||'[]'
+			if(localStorage.arr!=false){
+				$('.commodity_shopping').css('display','none');
+				$('.shop_cat_box').css('display','block');
+			}
+			else{
+				$('.commodity_shopping').css('display','block');
+				$('.shop_cat_box').css('display','none');
+			}
+			console.log(str);
+		</script>
 	</body>
 </html>

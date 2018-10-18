@@ -288,18 +288,20 @@ color: red;
 }
 .center .shop_commodity{
 	width: 100%;
-	height: 400px;
+	height: 500px;
+	margin-top: 30px;
 	background: #fff;
-	margin-top: 20px;
-	padding-top: 100px;
+	border:1px solid #000000;
+	
 }
 .commodity_shopping{
 	width: 200px;
 	height: 250px;
 	margin: 0 auto;
+	margin-top:150px;
 	text-align: center;
 }
-.commodity_shopping .iconfont{
+.commodity_shopping .icon-qicheqianlian-1-copy{
 	font-size: 80px;
 	color: #888888;
 }
@@ -316,6 +318,111 @@ color: red;
 	font-size: 18px;
 	color: #fff;
 }
+.center .shop_commodity .shop_cat_box{
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	display: none;
+}
+.center .shop_commodity .shop_cat{
+	width:100%;
+	height: 40px;
+	background: #fff;
+	margin-bottom: 10px;
+	/*display: none;*/
+}
+.center .shop_commodity .shop_cat>ul>li{
+	float: left;
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+	color: #ccc;
+}
+.center .shop_commodity .shop_cat>ul>li:nth-child(2){
+	width: 400px;
+}
+.center .shop_commodity .shop_cat .icon-xuanze1{
+	color: red;
+	margin-right: 20px;
+	margin-left: 10px;
+}
+.center .shop_commodity .shop_cat_1{
+	width: 100%;
+	height: 120px;
+	margin-bottom: 50px;
+	background: #fff;
+}
+.center .shop_commodity .shop_cat_1 .item1,.item3,.item4,.item5,.item6{
+	line-height: 100px;
+	float: left;
+	width: 130px;
+	height: 100px;
+	margin-left: 5px;
+	margin-left: ;
+}
+.center .shop_commodity .item6 button{
+	width: 100px;
+	height: 30px;
+	border: none;
+	outline: none;
+	cursor:pointer;
+}
+.center .shop_commodity .shop_cat_1 .item2{
+	float: left;
+	width: 350px;
+	height: 100px;
+	line-height: 100px;
+}
+.center .shop_commodity .shop_cat_1 .item1 img{
+	margin-top: 10px;
+	display: block;
+	float: left;
+	width: 80px;
+	height: 100px;
+}
+.center .shop_commodity .shop_cat_1 .item1>a{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 80px;
+	margin-right: 10px;
+	margin-left: 4px;
+}
+.center .shop_commodity .shop_cat_1 .item1 .icon-xuanze1{
+	color: red;
+	
+}
+.item4 span{
+	margin-top: 30px;
+	display: block;
+	width:20px;
+	height:21px;
+	float:left;
+	text-align: center;
+	line-height:20px;
+	font-size: 24spx;
+	border:1px solid #ccc;
+	border-left: none;	
+	cursor:pointer;
+}
+.item4 span:last-child{
+	margin-top: 52px;
+	margin-left: -21px;
+	border-top: none;
+}
+.item4 input{
+	margin-top: 30px;
+	width: 40px;
+	height: 40px;
+	float:left;
+	text-align: center;
+}
+.item4 span:hover{
+	background:rgb(224,224,224) ;
+}
+
+
+
 .recommend{
 	width: 100%;
 	height: 40px;
@@ -447,3 +554,41 @@ color: red;
 	color: #888888;
 }
 
+.box_box{
+	   		position: absolute;
+	   		top:30%;
+	   		left:50%;
+	   		width: 500px;
+	   		height: 200px;
+	   		margin-left: -250px;
+	   		background: #fff;
+			margin-top: 100px;	   		
+	   		border: 1px solid black;
+	   		display: none;
+	   		z-index: 305;
+	   		}
+	 .box_box h2{
+	   		display: block;
+	   		background: black;
+	   		color:#fff;
+	   		text-align: center;
+	   	}
+	   	.box_box h3{
+	   		display: block;
+			text-align: center;
+			margin-top: 50px;
+	   	}
+	   .box_box	.btn{
+	   		width: 150px;
+	   		height: 50px;
+	   		margin: 0 auto;
+	   		margin-top:20px;
+	   	}
+	   .box_box	.btn button{
+	   		width: 50px;
+	   		height: 30px;
+	   		background: black;
+	   		color: #fff;
+	   		border: none;
+	   		margin-left: 15px;
+	   	}
