@@ -1,0 +1,100 @@
+/*css reset*/
+*{margin:0px;padding:0px;}
+ul,li,ol{list-style:none;}
+b,strong{font-weight:narmal;}
+i,em{font-style:normal;}
+a,u{text-decoration:none;}
+h1,h2,h3,h4,h5,h6{font-size:16px;font-weight:normal;}
+#top,#nav#banner{width:1000px;margin:0 auto;}
+*{
+				margin: 0;
+				padding: 0;
+			}
+			ul li{
+				list-style: none;
+			}
+			
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			.box{
+				margin:100px auto;
+				width: 400px;
+				height: 600px;
+				background-color: #fff;
+				border:3px solid #ccc;
+			}
+			.box h1{
+				font-size: 18px;
+				border-bottom:1px solid #ccc;
+			}
+			.box .first{
+				min-height: 40px;
+				
+			}
+			.box .first>li{
+				display: block;
+				position: relative;
+				min-height: 40px;
+				line-height: 40px;
+				border-bottom:1px solid #ccc;
+			}
+			.box .first>li>span{
+				font-size: 16px;
+				margin-right: 5px;
+				color:#888;
+			}
+			.box .first>li>b{
+				font-size: 12px;
+				color: #ccc;
+			}
+			.box .first>li>i{
+				float: right;
+				margin-right: 20px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				border-bottom:1px solid #ccc;
+				border-left: 1px solid #ccc;
+				transform: rotateY(90deg);
+			}
+			.box .first_1{
+				min-height: 100px;
+			}
+			.two{
+				min-height: 200px;
+				margin-top: 50px;
+				background: red;
+				display: none;
+			}
+			.two>li{
+				position: relative;
+				display: block;
+				min-height: 30px;
+				line-height: 30px;
+				border-bottom:1px solid #888;	
+				background-color: #ccc;
+			}
+			.two .left{
+				/*float: left;*/
+				width:300px;
+				height: 100px;
+				border-right:1px solid #888;
+			}
+			.two .but1{
+			position: absolute;
+			top: 20px;
+			right: 10px;
+			width:60px;
+			height: 30px;
+			background: orange;
+			border: none;
+			}
+			.two h2,h3,h4{
+				font-size: 12px;
+			}
+			/*.box .first>li:first-child:hover .two{
+				display: block;
+				background: red;
+			}*/*/

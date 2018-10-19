@@ -97,7 +97,7 @@
 					</ul>
 				</div>
 				<div class="shop_cat_1">
-					<div class="item1">
+							<!--<div class="item1">
 						<a href=""><i class="iconfont icon-xuanze1"></i></a>
 						<img src="images/gather/gather2.jpg" alt="" />
 					</div>
@@ -109,12 +109,12 @@
 						
 						<input type="text" name="carbuy" value="1" autocomplete="off" class="goods_num J_goodsNum"> 
 						<div>
-							<span >-</span>
+							<span>-</span>
 							<span>+</span>
 						</div>
 					</div>
 					<div class="item5">¥ 1999.00</div>
-					<div class="item6"> <button>删除</button></div>
+					<div class="item6"> <button>删除</button></div>-->
 				</div>
 				</div>
 			</div>
@@ -250,17 +250,22 @@
 		</div>
 		
 		<script type="text/javascript" src="js/jquery.js"> </script>
+		<script type="text/javascript" src="js/shopping.js">
+			
+		</script>
 		<script type="text/javascript">
-			var  str =localStorage.arr||'[]'
-			if(localStorage.arr!=false){
-				$('.commodity_shopping').css('display','none');
-				$('.shop_cat_box').css('display','block');
-			}
-			else{
-				$('.commodity_shopping').css('display','block');
-				$('.shop_cat_box').css('display','none');
-			}
-			console.log(str);
+//			var  str =localStorage.arr||'[]'
+//			if(str!=''){
+//				$('.commodity_shopping').css('display','none');
+//				$('.shop_cat_box').css('display','block');
+//			}
+//			else{
+//				$('.commodity_shopping').css('display','block');
+//				$('.shop_cat_box').css('display','none');
+//			}
+////			console.log(str);
+			shopping.init();
+			
 		</script>
 	</body>
 </html>

@@ -291,14 +291,13 @@ color: red;
 	height: 500px;
 	margin-top: 30px;
 	background: #fff;
-	border:1px solid #000000;
 	
 }
 .commodity_shopping{
 	width: 200px;
 	height: 250px;
 	margin: 0 auto;
-	margin-top:150px;
+	padding-top:150px;
 	text-align: center;
 }
 .commodity_shopping .icon-qicheqianlian-1-copy{
@@ -323,6 +322,7 @@ color: red;
 	height: 100%;
 	background: #ccc;
 	display: none;
+	overflow:auto;
 }
 .center .shop_commodity .shop_cat{
 	width:100%;
@@ -348,17 +348,28 @@ color: red;
 }
 .center .shop_commodity .shop_cat_1{
 	width: 100%;
-	height: 120px;
-	margin-bottom: 50px;
+	height: 100%px;
 	background: #fff;
 }
-.center .shop_commodity .shop_cat_1 .item1,.item3,.item4,.item5,.item6{
+.center .shop_commodity .shop_cat_1 .aaaa{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+	margin-bottom: 50px;
+}
+
+
+.center .shop_commodity .shop_cat_1 .aaaa .item1,.item3,.item4,.item5,.item6{
 	line-height: 100px;
 	float: left;
-	width: 130px;
-	height: 100px;
+	width: 135px;
+	height: 110px;
 	margin-left: 5px;
-	margin-left: ;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+.center .shop_commodity .item5{
+	color: red;
 }
 .center .shop_commodity .item6 button{
 	width: 100px;
@@ -370,8 +381,8 @@ color: red;
 .center .shop_commodity .shop_cat_1 .item2{
 	float: left;
 	width: 350px;
-	height: 100px;
-	line-height: 100px;
+	height: 120px;
+	line-height: 130px;
 }
 .center .shop_commodity .shop_cat_1 .item1 img{
 	margin-top: 10px;

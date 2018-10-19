@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_863464_2ryzyx8zm09.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="box">
+			<h1><i class="iconfont shop-shizhong"></i>区块标题</h1>
+			<ul class="first">
+				<li class="first_1">
+					<!--<h2><span>一级标题</span><b>一级标题说明</b><i class="iconfont shop-arrow-down"></i></h2>-->
+					
+					<ul class="two">
+						<li>
+							<!--<div class="left">
+							<h2>towchild[n].name</h2>
+							<h3>towchild[n].content</h3>
+							<h4>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+							</h4>
+
+							</div>
+							<button class="but1">弹窗</button>-->
+						</li>
+						<li>
+							<!--<div class="left">
+							<h2>towchild[n].name</h2>
+							<h3>towchild[n].content</h3>
+							<h4>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+							</h4>
+
+							</div>
+							<button class="but1">弹窗</button>-->
+						</li>
+						<li>
+						<!--<div class="left">
+							<h2>towchild[n].name</h2>
+							<h3>towchild[n].content</h3>
+							<h4>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+							</h4>
+
+							</div>
+							<button class="but1">弹窗</button>-->
+						</li>
+					<li>
+						<h5>查看剩余二级标题<i class="iconfont shop-arrow-down"></i></h5>
+					</li>
+					</ul>
+				</li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+			 <script src="ajax1.0.0.js"></script>
+			 <script type="text/javascript" src="jquery.js">
+			 	
+			 </script>
+		<script type="text/javascript" src="menu.json">
+			
+		</script>
+		<script type="text/javascript">
+//			console.log($firstALLli)
+			var $two = document.querySelector('.two');
+			var $twoALL = $two.querySelectorAll('li')
+				var params = {               
+                success: function(data) {
+                   var data = data;
+                   for(var i=0;i<data.length;i++){
+                   		var child = data[i].child;
+                   		for(var j=0;j<child.length;j++){
+                   			var towchild = child[j].child;
+              
+                   		$('.first').find('li')[j].innerHTML = `
+                   				<span>${child[j].name}</span>
+                   				<b>${child[j].content}</b>
+                   				<i class="qf-suning shop-shizhong"></i>
+                   		`
+                   		  for(var n=0;n<towchild.length;n++){
+                   		  	console.log(towchild[n].name);
+                   		  	console.log(towchild[n].content);
+                   		  	console.log($('.two').children('li'))
+                   		$twoALL[n].innerHTML = `<div class="left">
+							<h2>${towchild[n].name}</h2>
+							<h3>${towchild[n].content}</h3>
+							<h4>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+								<span><i class="qf-suning shop-shizhong"></i>标签</span>
+							</h4>
+
+							</div>
+							<button class="but1">弹窗</button>`
+                   		  	
+                   		  }
+                   		} 
+                   		
+                   		
+                   }
+//                 console.log(child[j].name); 
+                }
+            }
+            sendAjax('menu.json', params);
+
+			$('.first_1').click(function(){
+				$two.style.display ='block';
+				console.log(111)
+			})
+//			$('.first_1').mouseleave(function(){
+//				$('.two').css('display','none');
+//			})
+
+		</script>
+    <script>
+   
+    </script>
+
+		</script>
+	</body>
+</html>

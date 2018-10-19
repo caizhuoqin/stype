@@ -588,9 +588,11 @@
 //			设置放大镜 设置放大镜的倍数
 			glass.init(4);
 			
+		</script>
+		<script type="text/javascript">
 			(function(){
 //				点击+按钮,inp里面的数字+1
-				var val = $('.purchase_quantity').val();
+			var val = $('.purchase_quantity').val();
 			$('.plus').click(function(){
 				val++;
 				$('.purchase_quantity').val(val);
@@ -610,12 +612,21 @@
 				$('.box_box').css('display','block');
 				var c = $('.shop_message').find('h2').html();
 				var b = $('.price_h').find('b').html();
-				var h = Number(b.split(' ')[1]);				
+				var h = Number(b.split(' ')[1]);
+				var img = $('.img-box').find('.active').html();
+//					img = img.slice(10,30);
+//				<img src="images/01_small.jpg" alt="">
+					img  = img.split('=')[1];
+					img = img.split(' ')[0];
+					img = img.split('"')[1]; 
+//					img=img.match(/ *+/g/);
+					console.log(img)
 				var obj={
-					商品:c,
-					价格:b,
-					数量:val,
-					小计:h*val,
+					img:img,
+					name:c,
+					price:b,
+					num:val,
+					sum:h*val,
 				}
 					arr.push(obj);
 					localStorage.arr=JSON.stringify(arr);
